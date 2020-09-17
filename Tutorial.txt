@@ -1,0 +1,121 @@
+﻿TUTORIAL
+
+1) Copy EVERTHING from the zip to a new folder somwhere, the Images folder has to be at the same place as the .exe files
+2) Download Weakauras 2 Addon https://www.curseforge.com/wow/addons/weakauras-2/files and install it
+3) Start WoW, DEACTIAVTE ALL ADDONS OTHER THAN WEAKAURAS & Create all the macros ingame listed below with the corresponding hotkeys
+3.1) Make sure WoW is in a 16:9 resolution so (1024×576, 1152×648, 1280×720, 1366×768, 1600×900, 1920×1080, 2560×1440 or 3840×2160)
+4) Copy the whole RAW data from the "WA_STRING.txt", then do "/wa" ingame and go to import, paste it in there and import
+5) Make sure the box (color doesn't matter!!) is at the very top left corner like here: https://i.imgur.com/zmQSImR.png
+6) Open ONE of the .exe files (feel free to RENAME it!)
+7) Stand IN TOWN (any town) next to the AV guy
+8) Press F11 (after reading the little popup and pressing "OK")
+9.1) Make sure the Weakaura square is visible AT ALL TIME and nothing can be on top of it
+9.2) Minimizing WoW will break the script, dont do it
+9.3) If you move the window you'll have to reload the script!
+
+#######################################################
+### You need the following keybinds & Macros INGAME ###
+#######################################################
+
+Macro for keybind "7":
+/click StaticPopup1Button1
+____________________________________________________________________
+Macro for keybind "8" (HORDE):
+/targetexact Taim Ragetotem
+/targetexact Kartra Bloodsnarl
+/targetexact Grizzle Halfmane
+____________________________________________________________________
+Macro for keybind "8" (ALLIANCE):
+/targetexact Brogun Stoneshield
+/targetexact Thelman Slatefist
+/targetexact Glordrum Steelbeard
+____________________________________________________________________
+Keybind "9":
+go to keybinds > targeteting > interact with target
+as shown here: https://i.imgur.com/4gnnd5w.png
+____________________________________________________________________
+Macro for keybind "0" (as in zero):
+/click BattlefieldFrameJoinButton
+____________________________________________________________________
+Keybind "F6"
+IMPORTANT!!! -> YOUR 60% MOUNT 
+____________________________________________________________________
+Macro for keybind "F7":
+/use 13					(if you have use the TOP trinket slot for your AV trinket)			
+/use 14					(if you have use the BOTTOM trinket slot for your AV trinket)
+
+(You have to equip this trinket for it to work: https://classic.wowhead.com/search?q=insignia+rank )
+____________________________________________________________________
+Macro for keybind "F8":
+/click WorldStateScoreFrameLeaveButton
+____________________________________________________________________
+
+Macro for keybind "F9":
+/run DisableAddOn("WeakAuras"); ReloadUI()
+____________________________________________________________________
+
+Macro for keybind "F10":
+/run EnableAddOn("WeakAuras"); ReloadUI()
+____________________________________________________________________
+
+"WASD" for movement (A & D being STRAFE keys)
+Left and Right arrow key are turn left & right!
+Like this: https://i.imgur.com/1SNmdT0.png
+
+#####################################################################################################################
+
+You NEED these Weakauras:
+https://pastebin.com/dGie4UYr
+(You can get the Weakaura addon here: https://www.curseforge.com/wow/addons/weakauras-2/files )
+
+You have to move the colored box into the VERY TOP LEFT CORNER of your screen like this:
+https://i.imgur.com/zmQSImR.png NO space between the corner of WoW and the box!! You can drag the weakaura a little bit INTO the edge of the screen, np
+
+#####################################################################################################################
+
+IMPORTANT: DEACTIAVTE ALL ADDONS OTHER THAN WEAKAURAS !
+
+Please keep in mind that the running out of cave part CAN bug due to no Coordinates API available inside battlegrounds!
+
+
+This only works with ENGLISH client. Please download the English client if you dont have it!
+
+
+#####################################################################################################################
+
+A few things: 
+1) Please make sure to read everything thats written down here, if you follow this, the bot WILL work.
+2) The bot runs ~2minutes AFTER joining the BG out of the cave, not before
+3) 10-20s after running out of the cave he recalls, not before.
+4) The "JustAFK" profile is for people who a) wanna stay in cave or b) just want the bot to autoqueue/join and play the bg on their own
+5) Please make sure to read everything thats written down here, if you follow this, the bot WILL work.
+6) Only run one .exe file at once, you can close it in your taskbar (where the small icons are!)
+7) Everytime you MOVE the World of Warcraft window you HAVE to reload the Bot with F12 + F11
+
+
+Troubleshooting:
+
+1) When you press f12 to reset the script and then f11, does your char jump in game?
+
+Solution:
+
+"Yes" > Good! That means the script found the WoW window. If you press 8 9 0 manually and you get into queue then you havent positioned the Weakaura properly. Make sure your weakaura is correctly placed in the VERY top left corner without a pixel space, rather too far in the corner (out of screen than too far away. Try switching WoW from windowed to windowed fullscreen / move it to another monitor but keep in mind you always have to press F12 to reset, then F11 to start.
+
+"No" > Is your WoW client in english? do you run WoW as admin? Dont! Do you have the World of Warcraft folder open or any other WoW/file that's called World of Warcraft? Try to switch between windowed and windowed fullscreen! Last but not least, try to run the .exe file as admin!
+__________________________________
+
+2) Weakauras still blocks the PRIMO from joining the bg sometimes!
+
+Solution:
+Deactivate "Weakaura Options", not Weakaura itself & replace your "7" Macro with the following:
+/click StaticPopup1Button1
+/reload
+
+Yes, it will reload your ui occaisonally but this way the addons get fixed.
+
+__________________________________
+
+3) PRIMO doesnt leave the cave and walks in Circles!
+
+Solution:
+https://i.imgur.com/84oxirV.png 
